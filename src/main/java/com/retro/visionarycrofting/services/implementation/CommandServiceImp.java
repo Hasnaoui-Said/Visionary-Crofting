@@ -1,13 +1,12 @@
 package com.retro.visionarycrofting.services.implementation;
 
-import com.retro.visionarycrofting.entities.Client;
 import com.retro.visionarycrofting.entities.Command;
+import com.retro.visionarycrofting.entities.CommandItem;
 import com.retro.visionarycrofting.repositories.CommandRepository;
+import com.retro.visionarycrofting.services.CommandItemService;
 import com.retro.visionarycrofting.services.CommandService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 
@@ -15,9 +14,13 @@ import java.util.Objects;
 public class CommandServiceImp implements CommandService {
 
     private final CommandRepository commandRepository ;
+    private final CommandItemService commandItemService;
 
-    @Autowired
-    public CommandServiceImp(CommandRepository commandRepository) {this.commandRepository = commandRepository;}
+    public CommandServiceImp(CommandRepository commandRepository, CommandItemService commandItemService) {
+        this.commandRepository = commandRepository;
+        this.commandItemService = commandItemService;
+    }
+
 
     @Override
     public List<Command> getCommands() {
@@ -26,7 +29,25 @@ public class CommandServiceImp implements CommandService {
 
     @Override
     public Command AddCommand(Command command) {
-        return commandRepository.save(command);
+      // verification:
+      // check there is at least one existing command item in the list
+      assert  command.getCommandItems().size() >= 1;
+      // check there is enough quantity in each command item
+      for (CommandItem commandItem:
+        command.getCommandItems()) {
+        commandItemService.checkQuantity(commandItem, commandItem.getQuantite());
+      }
+      // save command,
+      commandRepository.save(command);
+      // save command items to db
+      for (CommandItem commandItem:
+      command.getCommandItems()) {
+        commandItem.setCommand(command);
+        commandItemService.addNew(commandItem);
+      }
+
+      // return the final command
+      return command;
     }
 
     @Override
@@ -55,4 +76,5 @@ public class CommandServiceImp implements CommandService {
 
         return commandRepository.save(Cmd);
     }
+
 }
