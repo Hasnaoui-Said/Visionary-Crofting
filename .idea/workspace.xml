@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bea30bbe-58f8-4c42-a47b-e8d8b73623c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/CallForProposal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/CallForProposal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/repositories/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/repositories/ProductDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/ProductWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/ProductWs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/StockWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/StockWs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/StockService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/ProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/implementation/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/implementation/StockServiceImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visionaryCrofting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/visionaryCrofting.iml" afterDir="false" />
-    </list>
+    <list default="true" id="bea30bbe-58f8-4c42-a47b-e8d8b73623c5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,7 +235,7 @@
       <workItem from="1670157644073" duration="192000" />
       <workItem from="1670158523063" duration="23000" />
       <workItem from="1670226232206" duration="2313000" />
-      <workItem from="1670234846729" duration="970000" />
+      <workItem from="1670234846729" duration="1298000" />
     </task>
     <servers />
   </component>
