@@ -17,7 +17,6 @@ public class Product implements Serializable {
     private String description;
     private int quantity;
     @ManyToOne(fetch = FetchType.LAZY)
-    @JsonIgnore
     private Stock stock;
     @Enumerated(EnumType.STRING)
     private Category category;
@@ -73,6 +72,7 @@ public class Product implements Serializable {
         this.quantity = quantity;
     }
 
+    @JsonIgnore
     public Stock getStock() {
         return stock;
     }

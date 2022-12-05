@@ -1,5 +1,6 @@
 package com.retro.visionarycrofting.services;
 
+import com.retro.visionarycrofting.entities.CallForProposal;
 import com.retro.visionarycrofting.entities.Stock;
 import java.util.List;
 
@@ -23,4 +24,10 @@ public interface StockService {
     public Stock update(Stock stock);
 
     Stock findById(Long id);
+
+    CallForProposal validApellOffer(String call);
+
+    CallForProposal createApellOffer(CallForProposal call);
+
+    CallForProposal closeApellOffer(String ref);
 }

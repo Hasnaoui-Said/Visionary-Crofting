@@ -5,11 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bea30bbe-58f8-4c42-a47b-e8d8b73623c5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/implementation/StockServiceImplTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/CallForProposal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/CallForProposal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/entities/Stock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/repositories/ProductDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/repositories/ProductDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/ProductWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/ProductWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/StockWs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/ressources/StockWs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/StockService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/StockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/ProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/ProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/implementation/StockServiceImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/implementation/StockServiceImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visionaryCrofting.iml" beforeDir="false" afterPath="$PROJECT_DIR$/visionaryCrofting.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,8 +30,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -83,27 +93,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "/home/molaysaid/www/ideaProject/Visionary-Crofting/src/test/resources",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "c7a12e476d3caece1954a3d9925a321b"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/molaysaid/www/ideaProject/Visionary-Crofting/src/test/resources&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;c7a12e476d3caece1954a3d9925a321b&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;h2&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.retro.visionarycrofting.services" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/test/resources" />
       <recent name="$PROJECT_DIR$/src/test" />
@@ -115,11 +133,16 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.retro.visionarycrofting.services" />
       <recent name="com.retro.visionarycrofting.services.implementation" />
       <recent name="com.retro.visionarycrofting.repositories" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.retro.visionarycrofting.ressources" />
+      <recent name="com.retro.visionarycrofting.repositories" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.StockServiceImplTest.findByEmail">
+  <component name="RunManager" selected="Spring Boot.VisionaryCroftingApplication">
     <configuration name="ProductDaoTest.checkIfProductExistByRef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="visionaryCrofting" />
       <extension name="coverage">
@@ -131,6 +154,22 @@
       <option name="PACKAGE_NAME" value="com.retro.visionarycrofting.repositories" />
       <option name="MAIN_CLASS_NAME" value="com.retro.visionarycrofting.repositories.ProductDaoTest" />
       <option name="METHOD_NAME" value="checkIfProductExistByRef" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceTest.existsByRef" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="visionaryCrofting" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.retro.visionarycrofting.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.retro.visionarycrofting.services" />
+      <option name="MAIN_CLASS_NAME" value="com.retro.visionarycrofting.services.ProductServiceTest" />
+      <option name="METHOD_NAME" value="existsByRef" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,6 +216,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.StockServiceImplTest.findByEmail" />
+        <item itemvalue="JUnit.ProductServiceTest.existsByRef" />
         <item itemvalue="JUnit.StockServiceImplTest" />
         <item itemvalue="JUnit.ProductDaoTest.checkIfProductExistByRef" />
       </list>
@@ -202,6 +242,17 @@
       <workItem from="1669707374411" duration="339000" />
       <workItem from="1669708708989" duration="13657000" />
       <workItem from="1669799607643" duration="504000" />
+      <workItem from="1669978460044" duration="337000" />
+      <workItem from="1669989667607" duration="3759000" />
+      <workItem from="1669993512163" duration="169000" />
+      <workItem from="1669996098217" duration="14000" />
+      <workItem from="1669996165562" duration="2771000" />
+      <workItem from="1670061512996" duration="15000" />
+      <workItem from="1670063115357" duration="1576000" />
+      <workItem from="1670157644073" duration="192000" />
+      <workItem from="1670158523063" duration="23000" />
+      <workItem from="1670226232206" duration="2313000" />
+      <workItem from="1670234846729" duration="970000" />
     </task>
     <servers />
   </component>
@@ -256,30 +307,64 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java</url>
-          <line>54</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java</url>
+          <line>18</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java</url>
-          <line>55</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java</url>
+          <line>24</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java</url>
-          <line>56</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java</url>
+          <line>23</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/implementation/StockServiceImpl.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java</url>
+          <line>25</line>
           <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/services/ProductServiceTest.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.7.5/spring-data-jpa-2.7.5.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
+          <line>383</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.7.5/spring-data-jpa-2.7.5.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
+          <line>384</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.7.5/spring-data-jpa-2.7.5.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
+          <line>388</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-jpa/2.7.5/spring-data-jpa-2.7.5.jar!/org/springframework/data/jpa/repository/support/SimpleJpaRepository.class</url>
+          <line>386</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/test/java/com/retro/visionarycrofting/repositories/ProductDaoTest.java</url>
           <line>14</line>
           <properties field="productDaoTest" class="com.retro.visionarycrofting.repositories.ProductDaoTest" />
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/com/retro/visionarycrofting/services/ClientService.java</url>
+          <line>11</line>
+          <properties class="com.retro.visionarycrofting.services.ClientService" method="getClient">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

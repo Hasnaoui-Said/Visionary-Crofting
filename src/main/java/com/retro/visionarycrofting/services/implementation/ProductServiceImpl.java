@@ -110,4 +110,10 @@ public class ProductServiceImpl implements ProductService {
         if(this.getOne(product.getId()) == null) return null;
         return productDao.save(product);
     }
+    @Override
+    public boolean existsByRef(String ref) {
+//        if(this.findByRef(product.getRef()) == null) return null;
+//        if(this.getOne(product.getId()) == null) return null;
+        return productDao.existsByRef(ref);
+    }
 }

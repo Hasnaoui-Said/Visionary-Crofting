@@ -78,6 +78,7 @@ public class Stock implements Serializable {
         this.phone = phone;
     }
 
+    @JsonIgnore
     public List<Product> getProducts() {
         return products;
     }

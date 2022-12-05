@@ -70,7 +70,7 @@ public class CallForProposal implements Serializable {
     public void setProduct(String refProduct) {
         this.refProduct = refProduct;
     }
-
+    @JsonIgnore
     public Stock getStock() {
         return stock;
     }

@@ -18,4 +18,5 @@ public interface ProductDao extends JpaRepository<Product, Long> {
     List<Product> findAllByCategoryAndPrixGreaterThanEqual(Category cat, long prix);
     List<Product> findAllByCategoryAndQuantityGreaterThanEqual(Category cat, int quantity);
     int deleteByRef(String ref);
+    boolean existsByRef(String ref);
 }

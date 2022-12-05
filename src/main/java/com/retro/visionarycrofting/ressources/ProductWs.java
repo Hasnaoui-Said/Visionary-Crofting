@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/${api.endpoint}/product")
+@RequestMapping("${api.endpoint}/product")
 public class ProductWs {
     @Autowired
     ProductServiceImpl productService;

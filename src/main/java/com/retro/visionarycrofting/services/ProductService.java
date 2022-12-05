@@ -31,4 +31,6 @@ public interface ProductService {
     public Product save(Product product, String name);
 
     public Product update(Product product);
+
+    boolean existsByRef(String ref);
 }

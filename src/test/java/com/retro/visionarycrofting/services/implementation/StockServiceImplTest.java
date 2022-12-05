@@ -1,7 +1,7 @@
 package com.retro.visionarycrofting.services.implementation;
 
 import com.retro.visionarycrofting.entities.Stock;
-import org.junit.jupiter.api.Assertions;
+import com.retro.visionarycrofting.repositories.StockDao;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,7 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 class StockServiceImplTest {
 
     @Autowired
-    StockServiceImpl stockService;
+    private StockDao stockService;
     @Test
     void findByEmail() {
         Stock st = new Stock();
